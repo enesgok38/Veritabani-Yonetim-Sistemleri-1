@@ -27,6 +27,7 @@ Farklılıklar:
 Geleneksel dosyalama sistemlerinde veriye erişim yavaştır, VTYS’de ise indeksleme sayesinde daha hızlıdır.
 Geleneksel sistemlerde veri güvenliği düşüktür, VTYS ise yetkilendirme ve yedekleme gibi güvenlik önlemleri sunar.
 VTYS, aynı anda birden fazla kullanıcının veri üzerinde çalışmasına izin verirken, geleneksel sistemler genellikle tek kullanıcılıdır.
+
 3. VTYS’nin geleneksel sisteme göre üstün özelliklerini açıklayınız.
 Veritabanı Yönetim Sistemleri (VTYS), geleneksel dosyalama sistemlerine kıyasla birçok avantaja sahiptir:
 
@@ -35,6 +36,7 @@ Hızlı Erişim: Verilere indeksleme ve sorgulama dilleri (SQL gibi) sayesinde h
 Çok Kullanıcılı Çalışma: Aynı anda birçok kişi aynı veriler üzerinde çalışabilir.
 Güvenlik: Kullanıcı yetkilendirmeleri ve şifreleme ile verilerin korunmasını sağlar.
 Yedekleme ve Kurtarma: Veri kaybı yaşanmaması için yedekleme mekanizmaları bulunur.
+
 4. Veritabanının görevini açıklayarak kullanıldığı alanlara örnekler veriniz.
 Veritabanı, büyük miktarda veriyi organize ve güvenli bir şekilde saklayan bir sistemdir. Veriler, ilişkili tablolar halinde depolanır ve gerektiğinde sorgular ile erişilir.
 
@@ -44,29 +46,35 @@ Bankacılık: Müşteri bilgileri, hesap bakiyeleri ve işlemler saklanır.
 E-Ticaret: Ürün bilgileri, müşteri siparişleri ve ödeme geçmişi takip edilir.
 Hastaneler: Hasta kayıtları, randevular ve doktor bilgileri yönetilir.
 Okullar: Öğrenci bilgileri, ders programları ve notlar saklanır.
+
 5. Tablo, satır ve sütun kavramlarını açıklayınız.
 Veritabanlarında veriler tablolar içinde saklanır. Her tablo, belirli bir veri kümesini temsil eder.
 
 Tablo: Verilerin saklandığı ana yapıdır (örneğin: “Öğrenciler” tablosu).
 Satır (Kayıt): Bir tablodaki her veri girişine denir (örneğin: “Ahmet - 12345 - Bilgisayar Mühendisliği”).
 Sütun (Alan): Tablo içindeki veri kategorilerini ifade eder (örneğin: “Öğrenci Adı”, “Numarası”, “Bölümü”).
+
 6. Birincil anahtar ve yabancı anahtar kavramlarını ve farklılıklarını açıklayınız.
 Birincil Anahtar (Primary Key): Bir tabloda her kaydı benzersiz şekilde tanımlayan alandır. Örneğin, "Öğrenci Numarası" her öğrenci için farklıdır.
 Yabancı Anahtar (Foreign Key): Bir tabloda bulunan ve başka bir tablodaki birincil anahtara referans veren alandır. Örneğin, "Notlar" tablosundaki "Öğrenci Numarası" sütunu, "Öğrenciler" tablosundaki birincil anahtara referans verebilir.
+
 7. Veritabanı kullanıcı türleri nelerdir?
 Veritabanı Yöneticisi (DBA): Veritabanının güvenliği, yedeklenmesi ve performansından sorumludur.
 Geliştirici: Veritabanı ile çalışan uygulamalar geliştirir.
 Analist: Verileri sorgular, analiz eder ve raporlar oluşturur.
 Son Kullanıcı: Veriyi görüntüleyen, giren veya düzenleyen kişilerdir (örneğin, öğrenciler veya müşteriler).
+
 8. Örnek bir veritabanı için kullanıcılar belirleyerek yetkilendirmelerini şematik olarak gösteriniz.
 Örneğin, bir okul yönetim sisteminde:
 
 Yönetici: Tüm verilere erişebilir ve değiştirebilir.
 Öğretmen: Sadece kendi verdiği derslerin notlarını girebilir.
 Öğrenci: Sadece kendi notlarını görüntüleyebilir.
+
 9. Veritabanı ile VTYS’nin farkını açıklayınız.
 Veritabanı: Verilerin saklandığı sistemdir.
 VTYS (Veritabanı Yönetim Sistemi): Veritabanını yönetmek için kullanılan yazılımdır (örneğin, MySQL, PostgreSQL).
+
 10. İlişkisel veri modelini açıklayınız.
 İlişkisel veri modeli, verileri tablolar halinde saklayan ve tablolar arasında ilişkiler kuran bir modeldir. Bu ilişkiler genellikle yabancı anahtarlar kullanılarak sağlanır.
 
