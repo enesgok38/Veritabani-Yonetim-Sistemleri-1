@@ -1,0 +1,42 @@
+-- Yazarlar tablosu
+CREATE TABLE Yazarlar (
+    YazarID INT AUTO_INCREMENT PRIMARY KEY,
+    Isim VARCHAR(100) NOT NULL,
+    DogumTarihi DATE,
+    Ulke VARCHAR(50)
+);
+
+-- Kategoriler tablosu
+CREATE TABLE Kategoriler (
+    KategoriID INT AUTO_INCREMENT PRIMARY KEY,
+    KategoriAdi VARCHAR(100) NOT NULL
+);
+
+-- Kitaplar tablosu
+CREATE TABLE Kitaplar (
+    KitapID INT AUTO_INCREMENT PRIMARY KEY,
+    KitapAdi VARCHAR(100) NOT NULL,
+    YazarID INT,
+    KategoriID INT,
+    YayimTarihi DATE,
+    SayfaSayisi INT,
+    FOREIGN KEY (YazarID) REFERENCES Yazarlar(YazarID),
+    FOREIGN KEY (KategoriID) REFERENCES Kategoriler(KategoriID)
+);
+
+-- Kütüphane tablosu
+CREATE TABLE Kutuphane (
+    KutuphaneID INT AUTO_INCREMENT PRIMARY KEY,
+    KutuphaneAdi VARCHAR(100) NOT NULL,
+    Adres VARCHAR(200)
+);
+
+-- Kitap-Kütüphane ilişkisi tablosu
+CREATE TABLE KitapKutuphane (
+    KitapID INT,
+    KutuphaneID INT,
+    StokAdedi INT NOT NULL,
+    PRIMARY KEY (KitapID, KutuphaneID),
+    FOREIGN KEY (KitapID) REFERENCES Kitaplar(KitapID),
+    FOREIGN KEY (KutuphaneID) REFERENCES Kutuphane(KutuphaneID)
+);
